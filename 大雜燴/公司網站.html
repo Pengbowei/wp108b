@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/個人網頁.css">
+        <meta charset="utf-8">
+        <title>個人網頁</title>
+    </head>
+</html>
+
+<body style="font-family: Impact;">
+    <div class="top">
+        <a href="#" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a> <!--打開測欄按鈕-->
+        <a href="公司網站.html">Home</a>
+        <a href="personal.html">Introduce</a>
+        <a href="OOTD.HTML">OOTD</a>
+
+        <div class="DP">
+            <button class="SC">Social Media</button>
+            <div class="dp-content">
+                <a href="https://www.instagram.com/ppppppppppeng_/">Instagram</a>
+                <a href="https://www.facebook.com/ster.mon.524">Facebook</a>
+                <a href="https://line.me/ti/p/yIzYpLGNrP">LINE</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <h1>COVID-19</h1>
+        <a href="https://www.cdc.gov.tw/Category/Page/vleOMKqwuEbIMgqaTeXG8A">介紹</a>
+        <a href="https://www.cdc.gov.tw/TravelEpidemic/List/4x3Ks7o9L_pvqjGI6c5N1Q?diseaseId=N6XvFa1YP9CXYdB0kNSA9A">國際案例</a>
+        <a href="https://www.cdc.gov.tw/CountryEpidLevel/Index/NlUwZUNvckRWQ09CbDJkRVFjaExjUT09?diseaseId=N6XvFa1YP9CXYdB0kNSA9A">旅遊安全級別</a>
+        <a href="https://www.cdc.gov.tw/Category/MPage/J2kpDGSzvBVJJUYjK1dNhQ">重要表單</a>
+        <a href="https://www.cdc.gov.tw/Category/List/TTtVSbnRsqVjtImTQQFStQ">Q&A</a>
+    </div>
+
+    <script>
+        function openNav()
+        {
+            document.getElementById("mySidenav").style.width = "250px";//打開測欄
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";//主區塊背景變暗
+        }
+
+        function closeNav()
+        {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <div id="main">
+        <div class="x">
+            <div class="container">
+                <a href="https://sites.google.com/site/s10410107/jin-men/a-a-a"><img src="金門\km.jpg" alt="Avatar" class="image" style="width: 400px;"></a>
+                <div class="middle">
+                    <div class="text">金門介紹</div><!--鼠標移至時註解-->
+                </div>
+            </div>
+
+            <div class="container">
+                <a href="https://blog.xuite.net/maomi/Food01/84444839-%E3%80%90%E6%87%B6%E4%BA%BA%E5%8C%85%E3%80%91%E9%87%91%E9%96%80%E6%97%85%E9%81%8A%E8%87%AA%E7%94%B1%E8%A1%8C%E5%AE%8C%E5%85%A8%E6%94%BB%E7%95%A5+%2884%E7%AF%87%29%EF%BC%9A%E6%99%AF%E9%BB%9E%E3%80%81%E5%8F%A4%E8%B9%9F%E3%80%81%E7%BE%8E%E9%A3%9F%E3%80%81%E4%BC%B4%E6%89%8B%E7%A6%AE%E3%80%81%E7%A7%9F%E8%BB%8A%E3%80%81%E4%BD%8F%E5%AE%BF+1589"><img src="金門\caption.jpg" alt="Avatar" class="image" style="width: 400px;"></a>
+                <div class="middle">
+                <div class="text">景點統整</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="y">
+            <div class="content" style="max-width:835px"> <!--幻燈片-->
+                <img class="mySlides" src="金門\about1.jpg" style="width:100%">
+                <img class="mySlides" src="金門\image.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";  
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // 每兩秒變換一次圖片
+        }
+        </script>
+</body>

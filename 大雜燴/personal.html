@@ -1,0 +1,145 @@
+<!--註解在公司網站!-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/Personal.css">
+
+        <meta charset="utf-8">
+        <title>Pengbowei</title>
+    </head>
+</html>
+
+<body style="font-family: Impact;">
+    <div class="top">
+        <a href="#" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a> <!--打開測欄按鈕-->
+        <a href="公司網站.html">Home</a>
+        <a href="personal.html">Introduce</a>
+        <a href="OOTD.HTML">OOTD</a>
+
+        <div class="DP">
+            <button class="SC">Social Media</button>
+            <div class="dp-content">
+                <a href="https://www.instagram.com/ppppppppppeng_/">Instagram</a>
+                <a href="https://www.facebook.com/ster.mon.524">Facebook</a>
+                <a href="https://line.me/ti/p/yIzYpLGNrP">LINE</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <h1>COVID-19</h1>
+        <a href="https://www.cdc.gov.tw/Category/Page/vleOMKqwuEbIMgqaTeXG8A">介紹</a>
+        <a href="https://www.cdc.gov.tw/TravelEpidemic/List/4x3Ks7o9L_pvqjGI6c5N1Q?diseaseId=N6XvFa1YP9CXYdB0kNSA9A">國際案例</a>
+        <a href="https://www.cdc.gov.tw/CountryEpidLevel/Index/NlUwZUNvckRWQ09CbDJkRVFjaExjUT09?diseaseId=N6XvFa1YP9CXYdB0kNSA9A">旅遊安全級別</a>
+        <a href="https://www.cdc.gov.tw/Category/MPage/J2kpDGSzvBVJJUYjK1dNhQ">重要表單</a>
+        <a href="https://www.cdc.gov.tw/Category/List/TTtVSbnRsqVjtImTQQFStQ">Q&A</a>
+    </div>
+
+    <script>
+        function openNav()
+        {
+            document.getElementById("mySidenav").style.width = "250px";//打開測欄
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";//主區塊背景變暗
+        }
+
+        function closeNav()
+        {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <div id="main">
+        <table border="1" style="font-family: 標楷體;">
+            <tr>
+                <th colspan="4">個人簡歷表</th>
+            </tr>
+            <tr>
+                <th rowspan="7"><i>個人資料</i></th>
+                <th>姓名:</th>
+                <td>彭柏瑋</td>
+                <td rowspan="4"><img src="personal\S__58564619.jpg" height="160"></td>
+            </tr>
+
+            <tr>
+                <th>出生日期:</th>
+                <td>民國90年2月7日</td>
+            </tr>
+
+            <tr>
+                <th>性別:</th>
+                <td>男</td>
+            </tr>
+
+            <tr>
+                <th>籍貫:</th>
+                <td>高雄市</td>
+            </tr>
+
+            <tr>
+                <th>戶籍地址:</th>
+                <td colspan="2">金門縣金寧鄉大學路1號</td>
+            </tr>
+
+            <tr>
+                <th>通訊地址:</th>
+                <td colspan="2">高雄市鳳山區中崙2路582巷11號5樓</td>
+            </tr>
+
+            <tr>
+                <th>連絡電話:</th>
+                <td colspan="2">宅:(07)753-0543 手機:0908811218</td>
+            </tr>
+
+            <tr>
+                <th rowspan="3">求學經歷:</th>
+                <td colspan="3">
+                市立中崙國民小學(民國96年~102年)
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    市立鳳翔國中(民國102年~105年)
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    市立小港高中(民國105年~108年)
+                </td>
+            </tr>
+
+            <tr>
+                <th rowspan="3">家庭成員:</th>
+                <td>父親</td>
+                <td>彭群哲</td>
+                <td>電機工程師</td>
+            </tr>
+
+            <tr>
+                <td>母親</td>
+                <td>朱榮君</td>
+                <td>業務</td>
+            </tr>
+
+            <tr>
+                <td>哥哥</td>
+                <td>彭柏翔</td>
+                <td>聯合大學光電學系</td>
+            </tr>
+
+            <tr>
+                <th>社群軟體:</th>
+                <td align="center"><a href="https://www.facebook.com/ster.mon.524"><img src="personal\下載.png" width="25%" align="center"></a></td>
+                <td align="center"><a href="https://line.me/ti/p/yIzYpLGNrP"><img src="personal\21392186102fc053fafb3a3e242f62a6.png" width="10%"></a></td>
+                <td align="center"><a href="https://www.instagram.com/ppppppppppeng_/"><img src="personal\下載.jpg" width="25%"></a></td>
+            </tr>
+        </table>
+    </div>   
+    
+</body>

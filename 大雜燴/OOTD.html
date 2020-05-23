@@ -1,0 +1,87 @@
+<!--註解在公司網站!-->
+
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="CSS/OOTD.css">
+        <meta charset="utf-8">
+        <title>OOTD</title>
+    </head>
+</html>
+
+<body style="font-family: Impact;">
+
+    <div class="top">
+        <a href="#" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</a>
+        <a href="公司網站.html">Home</a>
+        <a href="personal.html">Introduce</a>
+        <a href="OOTD.HTML">OOTD</a>
+
+        <div class="DP">
+            <button class="SC">Social Media</button>
+            <div class="dp-content">
+                <a href="https://www.instagram.com/ppppppppppeng_/">Instagram</a>
+                <a href="https://www.facebook.com/ster.mon.524">Facebook</a>
+                <a href="https://line.me/ti/p/yIzYpLGNrP">LINE</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+        <h1>COVID-19</h1>
+        <a href="https://www.cdc.gov.tw/Category/Page/vleOMKqwuEbIMgqaTeXG8A">介紹</a>
+        <a href="https://www.cdc.gov.tw/TravelEpidemic/List/4x3Ks7o9L_pvqjGI6c5N1Q?diseaseId=N6XvFa1YP9CXYdB0kNSA9A">國際案例</a>
+        <a href="https://www.cdc.gov.tw/CountryEpidLevel/Index/NlUwZUNvckRWQ09CbDJkRVFjaExjUT09?diseaseId=N6XvFa1YP9CXYdB0kNSA9A">旅遊安全級別</a>
+        <a href="https://www.cdc.gov.tw/Category/MPage/J2kpDGSzvBVJJUYjK1dNhQ">重要表單</a>
+        <a href="https://www.cdc.gov.tw/Category/List/TTtVSbnRsqVjtImTQQFStQ">Q&A</a>
+    </div>
+
+    <script>
+        function openNav()
+        {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+
+        function closeNav()
+        {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+
+    <h1 style="text-align: center; font-family: verdana;">Outfit of the day</h1>
+
+    <div id="main">
+        <div class="first">
+            <div class="first-img">
+                <img src="OOTD\S__70950934.jpg" height="400px" width="350px">
+            </div>
+
+            <div class="first-introduce">
+                <p><b>Hat:</b><a href="https://shopee.tw/">shopee</a></p>
+                <p><b>TOP:</b><a href="https://www.instagram.com/goopi.co/?hl=zh-tw">Goopimade</a></p>
+                <p><b>Pants:</b><a href="https://www.instagram.com/goopi.co/?hl=zh-tw">Goopimade</a></p>
+                <p><b>Shoes:</b><a href="https://www.instagram.com/newbalance/?hl=zh-tw">New balance</a></p>
+                <p><b>Accessory:</b><a href="https://www.instagram.com/carharttwip/?hl=zh-tw">Carharttwip</a></p>
+            </div>
+        </div>
+
+        <div class="second">
+            <div class="second-img">
+                <img src="OOTD\S__70950938.jpg" height="400px" width="350px">
+            </div>
+
+            <div class="second-introduce">
+                <p><b>Hat:</b><a href="https://shopee.tw/">shopee</a></p>
+                <p><b>TOP:</b><a href="https://www.instagram.com/goopi.co/?hl=zh-tw">Goopimade</a></p>
+                <p><b>Pants:</b><a href="https://www.instagram.com/need__how/?hl=zh-tw">Need how</a></p>
+                <p><b>Shoes:</b><a href="https://www.instagram.com/converse/?hl=zh-tw">Converse</a></p>
+                <p><b>Accessory:</b><a href="https://www.instagram.com/goopi.co/?hl=zh-tw">Goopimade</a></p>
+            </div>
+        </div>
+    </div>
+</body>
