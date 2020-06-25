@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="chatRoomCss.css">
+        <title>ChatRoom</title>
+    </head>
+</html>
+
+<body>
+
+    <div id="startChat">
+        <div id="startChat-header">
+            <h1>Are you ready?</h1>
+        </div>
+        <div id="startChat-button">
+            <button onclick="startChat()" id="startChat-button-style">Start Chat!</button>
+        </div>
+    </div>
+
+    <div id="wrapper">
+
+        <div id="header"><!--上層功能列表-->
+            <div id="funtion-list">
+                <a href="chatRoom.html">新聊天</a>
+                <a href="mainPage.html">登入/註冊</a>
+            </div>
+        </div>
+
+        <div id="messageBox"><!--訊息頁-->
+
+        </div>
+        
+        <div id="footer"><!--輸入訊息-->
+            <input type="text" id="message"><button  onclick="innerChat()">SEND</button>
+        </div>
+    </div>
+
+    <script src="chatRoom.js"></script>
+</body>

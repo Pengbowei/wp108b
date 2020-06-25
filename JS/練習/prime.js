@@ -1,3 +1,6 @@
+//prompt is not support vscode!
+//i = prompt("請輸入底值:");
+//j = prompt("請輸入最大值:");
 
 i = 1;
 j = 100;

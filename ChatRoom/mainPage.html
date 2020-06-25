@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="mainPage.css">
+    <meta charset="utf-8">
+    <title>首頁</title>
+</head>
+</html>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>WELCOME</h1>
+        </div>
+
+        <div id="loginPage">
+            <fieldset>
+                <legend></legend>
+                <h1>Login:</h1>
+                 <p>Email address or Screen name:</p>
+
+                <input type="text" name="email" id="enterBox">
+
+                <p>Password</p>
+                <input type="password" name="password" width="200px" id="enterBox">
+
+                <br><br><button onclick="alert('Welcome')" id="login-button"><a href="chatRoom.html">Login</a></button>
+
+                <p><br><br><br>Forget your login detail:</p>
+                <input type="text" name="Foget" id="enterBox">
+                <br><br><button onclick="alert('Please check email')" id="login-button" style="width: 140px;">Sent password!</button>
+
+                <p><br></p>
+            </fieldset>
+        </div>
+
+        <div id="enterButton">
+            <button id="loginButton" onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <script src="mainPage.js"></script>
+</body>

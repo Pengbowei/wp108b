@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body
+            {
+                background-size: cover;
+            }
+
+            #top
+            {
+                padding: 10px;
+                height: 80px;
+            }
+
+            #login
+            {
+                float: left;
+                height: 400px;
+                width: 300px;
+                line-height: 10px;
+                padding: 0.3cm;
+                padding-left: 0.5cm;
+                padding-right: 0.5cm;
+                font-family: Impact;
+            }
+            
+            #title
+            {
+                height: 12px;
+                padding-left: 1.5cm;
+                font-family: Impact;
+            }
+            
+            #join
+            {
+                float: left;
+                height: 400px;
+                font-family: Impact;
+
+            }
+
+            #join1
+            {
+                float: left;
+                line-height: 10px;
+                padding: 0.5cm;
+                padding-left: 1.5cm;
+                padding-right: 1cm;
+                font-family: Impact;
+            }
+
+            #join2
+            {
+                float: left;
+                line-height: 10px;
+                padding: 0.5cm;
+                padding-left: 1.5cm;
+                padding-right: 1cm;
+                font-family: Impact;
+            }
+
+            #buttom
+            {
+                text-align: right;
+                padding-right: 2cm;
+            }
+            
+        </style>
+
+        <meta charset="utf-8">
+        <title>表格</title>
+    </head>
+</html>
+
+<body   background="pexels-photo-1538648.jpeg">
+
+    <div id="top">
+        <h1>Welcome to my webside!</h1>
+    </div>
+
+    <div id="login">
+        
+        <form >
+            <fieldset>
+                <legend></legend>
+                <h1>Login:</h1>
+                 <p><br><br>Email address or Screen name:</p>
+
+                <input type="text" name="email">
+
+                <p>Password</p>
+                <input type="password" name="password" width="200px">
+
+                <br><br><input type="submit" name="Login" value="Login" onclick="alert('Welcome')">
+
+                <p><br><br><br>Forget your login detail:</p>
+                <input type="text" name="Foget">
+                <br><br><input type="submit" value="Sent Password" onclick="alert('Please check your email')">
+
+                <p><br></p>
+            </fieldset>    
+        </form>
+    </div>
+
+    <div id="join">
+       
+        <div id="title">
+            <h1>Join Us:</h1>
+        </div>
+        
+        <div id="join1">
+            <form action="">
+                <p><br><br>Screen name (min. 5 chars)</p>
+                <input type="text" name="scname" size="20">
+
+                <p>Password (min. 5 chars)</p>
+                <input type="password" name="joinpassword" size="15">
+
+                <p>Full name</p>
+                <input type="text" name="Full name" size="20">
+
+                <p>Which club do you support</p>
+                <input type="text" name="club" size="20">
+            </form>
+        </div>
+
+        <div id="join2">
+            <p><br><br>Valid Email Address</p>
+            <input type="text" name="EmailAddress" size="20">
+
+            <p>Retype Password</p>
+            <input type="password" name="Password" size="15">
+
+            <p>How old are you</p>
+            <input type="text" name="year" width="2cm" size="5">
+
+            <p>Which nation do you support?</p>
+            <input type="text" name="nation" size="20">
+        </div>
+
+        <div id="buttom">
+            <form action="">
+                <input type="submit" value="Register" onclick="alert('Please check your email!')">
+            </form>
+        </div>
+    </div>
+    
+</body>
